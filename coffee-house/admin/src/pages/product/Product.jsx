@@ -49,7 +49,7 @@ export default function Product(props) {
     <div className="product">
       <h1 className="addProductTitle">Product</h1>
       <form className="addProductForm">
-        <div className="addProductItem">
+        {/* <div className="addProductItem">
           <label>Image</label>
           <input
           name="file"
@@ -58,7 +58,7 @@ export default function Product(props) {
           id="file" 
           onChange={selectFile}
           />
-        </div>
+        </div> */}
         <div className="addProductItem">
           <label>Name</label>
           <input
@@ -97,11 +97,7 @@ export default function Product(props) {
           placeholder="9.99$" />
         </div>
       </form>
-      <div className="productFormRight">
-          <div className="productUpload">
-              <img src="https://s1.1zoom.ru/b5050/936/Coffee_Grain_544148_3840x2400.jpg" alt="" className="productUploadImg" />
-          </div>
-          <button 
+      <button 
             onClick={() => {
               axios.put(`http://localhost:3001/products/${id}`, input)
               .finally(() => window.location.href = '/products')
@@ -110,7 +106,6 @@ export default function Product(props) {
           >
           Update
           </button>
-      </div>
     </div>
   );
 }

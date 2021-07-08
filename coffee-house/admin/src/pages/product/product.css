@@ -1,6 +1,8 @@
 .product {
-  flex: 4;
   padding: 20px;
+  margin: auto;
+  background-color:whitesmoke;
+  border: 1px solid black;
 }
 
 .productTitleContainer {
@@ -129,4 +131,5 @@
   font-weight: 600;
   cursor: pointer;
   width: 200px;
+  margin-left: 15px;
 }
