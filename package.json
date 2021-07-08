@@ -1,0 +1,28 @@
+{
+  "name": "coffee_house",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "i": "^0.3.6",
+    "mongoose": "^5.13.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikita27022003/React_Coffee_House.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nikita27022003/React_Coffee_House/issues"
+  },
+  "homepage": "https://github.com/Nikita27022003/React_Coffee_House#readme",
+  "description": ""
+}
