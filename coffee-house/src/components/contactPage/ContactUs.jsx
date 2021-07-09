@@ -25,6 +25,7 @@ const [nameDirty, setNameDirty] = useState(false);
 const [emailDirty, setEmailDirty] = useState(false);
 const [MessageDirty, setMessageDirty] = useState(false);
 const [NameError, setNameError] = useState("Введите имя");
+const [PhoneError, setPhoneError] = useState("Введите телефон");
 const [EmailError, setEmailError] = useState("Email не может быть пустым");
 const [MessageError, setMessageError] = useState("Введите сообщение");
 const [formValid, setFormValid] = useState(false)
@@ -113,6 +114,9 @@ const NameHandler = (e) => {
 }
 
 const phoneHandler = (e) =>{
+
+  setPhone(e.target.value)
+
   const {name,value} = e.target;
 
   setInput(prevInput =>{
@@ -241,7 +245,7 @@ useEffect(() =>{
                 <div className="col span-1-of-3">
                   <input
                   value={input.phone}
-                  type="phone"
+                  type="number"
                   name="phone"
                   onChange={e => phoneHandler(e)}
                   placeholder="Your number" />
