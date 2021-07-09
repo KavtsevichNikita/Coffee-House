@@ -704,7 +704,7 @@ footer .beans_dark{
 input[type=text],
 input[type=email],
 select,
-input[type=phone]
+input[type=number]
 {
     width: 100%;
     padding: 7px;
@@ -897,7 +897,7 @@ footer .container{
     }
 }
 @media screen and (max-width:1250px) {
-    input[type=text], input[type=email], input[type=phone], select {
+    input[type=text], input[type=email], input[type=number], select {
         width: 200px;
         display: block;
         margin: 10px auto;
@@ -937,7 +937,7 @@ footer .container{
     .our_best{
         height: 700px;
     }
-    // input[type=text], input[type=email], .input[type=phone], select {
+    // input[type=text], input[type=email], .input[type=number], select {
     //     width: 200px;
     //     padding: 7px;
     //     border-radius: 3px;
